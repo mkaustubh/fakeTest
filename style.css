@@ -1,59 +1,71 @@
 /* CSS RESET */
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     /* background: linear-gradient(); */
 }
+
+
 /* Navigation Bar */
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 83px;
+    width: 100%;
     position: fixed;
     top: 0px;
     left: 0px;
+    position: fixed;
 }
 
-#logo{
+#logo {
     margin: 10px 10px;
 }
-#logo img{
+
+#logo img {
     /* here filter is used to get the background of nav equal to img  */
     filter: invert(.2);
     width: 87px;
     margin: 2px 30px;
 }
-#navbar ul{
+
+#navbar ul {
     display: flex;
 }
-#navbar ul li{
+
+#navbar ul li {
     list-style: none;
     margin: 2px 20px;
 }
-#navbar ul li a{
-    color: black;
+
+#navbar ul li a {
+    color: rgb(181, 168, 168);
     font-weight: bold;
     font-size: 25px;
     padding: 28px 25px;
     text-decoration: none;
 }
 
-#navbar::before{
+#navbar::before {
     content: "";
-    background-color:black;
+    background-color: black;
     position: absolute;
-    width: 97%;
+    width: 100%;
     height: 100%;
     z-index: -1;
     opacity: .2;
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
     background-color: black;
     color: white;
 }
-#home{
+
+#home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +73,8 @@
     padding: 4px 300px;
     margin: 100px 2px;
 }
-#home::before{
+
+#home::before {
     content: "";
     position: absolute;
     /* img= http://www.w3schools.com/css/trolltunga.jpg */
@@ -71,17 +84,20 @@
     z-index: -1;
     opacity: 0.9;
 }
-#home h1{
+
+#home h1 {
     margin-bottom: 10px;
     font-size: 30px;
     font-weight: bold;
     color: whitesmoke;
 }
-#home p{
+
+#home p {
     font-size: 20px;
     color: whitesmoke;
 }
-.btn{
+
+.btn {
     margin: 20px 2px;
     padding: 4px 10px;
     font-size: 21px;
@@ -91,14 +107,15 @@
     border: 2px solid black;
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: whitesmoke;
     color: black;
     /* border: none; */
     font-weight: bold;
 }
 
-.services-container{
+.services-container {
     color: whitesmoke;
     background-color: black;
     position: relative;
@@ -108,29 +125,35 @@
     align-items: center;
     justify-content: center;
 }
-.s-primary{
+
+.s-primary {
     margin-top: 30px;
     font-size: 40px;
 }
-.services-container p{
+
+.services-container p {
     text-align: center;
     font-size: 18px;
     padding: 15px 300px;
 }
-.services{
+
+.services {
     margin: 79px 2px;
     display: flex;
 }
-.services h1{
+
+.services h1 {
     text-align: center;
 }
-.services img{
+
+.services img {
     height: 260px;
     margin: 4px 15px;
     border: 4px solid white;
     border-radius: 20px;
 }
-.about{
+
+.about {
     position: relative;
     top: 150px;
     background-color: #333;
@@ -140,12 +163,14 @@
     align-items: center;
     justify-content: center;
 }
-.abouth{
+
+.abouth {
     padding-top: 100px;
     padding-bottom: 20px;
     font-size: 40px;
 }
-.about img{
+
+.about img {
     width: 280px;
     height: 300px;
     filter: invert(0.8);
@@ -153,13 +178,15 @@
     border: 5px solid #333;
     padding: 10px;
 }
-footer{
+
+footer {
     position: relative;
     top: 150px;
     text-align: center;
     background-color: black;
     color: white;
 }
-footer p{
+
+footer p {
     padding: 30px;
 }
